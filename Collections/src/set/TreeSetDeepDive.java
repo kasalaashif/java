@@ -8,7 +8,7 @@ public class TreeSetDeepDive {
 
 	public static void main(String[] args) {
 		//Set<String> set = new TreeSet<>(Collections.reverseOrder());
-		Set<String> set = new TreeSet<>();
+		TreeSet<String> set = new TreeSet<>();
 		// Crud Create Operation
 		set.add("Ashif");
 		set.add("Ashraf");
@@ -30,6 +30,11 @@ public class TreeSetDeepDive {
 		// crUd Update Operation
 		// No update Operation
 		
+		// first last
+		System.out.println("First: " + set.first());
+		System.out.println("Last: " +set.last());
+		System.out.println("lower: " + set.lower("Ashif"));
+		System.out.println("higher: " + set.higher("Ashif"));
 		// cruD Delete Operation
 		
 		set.remove("Ashif");
@@ -38,6 +43,7 @@ public class TreeSetDeepDive {
 		System.out.println(set);
 		set.clear();
 		System.out.println(set);
+	
 	}
 
 }
