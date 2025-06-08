@@ -24,6 +24,23 @@ public class PriorityQueueDeepDive {
 		
 		System.out.println(pq1);
 		
+		// cRud Read Operation
+		System.out.println(pq.peek());
+		System.out.println(pq.poll());
+		
+		// crUd Update Functionality
+		// No update
+		
+		// Iterate
+		System.out.println("Iterating Over the Priority Queue");
+		for(String name : pq)
+			System.out.println(name);
+		
+		// Size, IsEmpty, Contains
+		System.out.println(pq.size());
+		System.out.println(pq.isEmpty());
+		System.out.println(pq.contains("Ashif"));
+		
 	}
 
 }
